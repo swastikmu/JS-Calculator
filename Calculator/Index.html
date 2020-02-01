@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+     .button {
+        background-color: white ;
+        border-color: green;
+        padding: 5px;
+        
+        text-align: center;
+        text-decoration: forestgreen;
+        display: inline-block;
+        font-size: 40px;
+        width: 150px;
+        height: 100px;
+} 
+
+.tab{
+float: left;
+}
+.display {
+  width: 500px;
+  height: 200px;
+  background-color : greenyellow;
+  border-color: yellow;
+  border-width: 5px;
+  margin-left:700px;
+  font-size: 70px;
+  text-align: end;
+  
+}
+</style>
+<script src="calcLogic.js"></script>
+
+</head>
+<body onload="initialize()">
+
+<div class="tab">
+        <table  >
+          <tr>
+              <td><button id='1' class="button" onclick="createExp(id)">1</button></td>
+              <td><button id='2' class="button" onclick="createExp(id)">2</button></td>
+              <td><button id='3' class="button" onclick="createExp(id)">3</button></td>
+              <td><button id='+' class="button" onclick="createExp(id)">+</button></td>
+          </tr>
+          <tr>
+            <td><button id='4' class="button" onclick="createExp(id)">4</button></td>
+            <td><button id='5' class="button" onclick="createExp(id)">5</button></td>
+            <td><button id='6' class="button" onclick="createExp(id)">6</button></td>
+            <td><button id='-' class="button" onclick="createExp(id)">-</button></td>
+        </tr>
+        <tr>
+          <td><button id='7' class="button" onclick="createExp(id)">7</button></td>
+          <td><button id='8' class="button" onclick="createExp(id)">8</button></td>
+          <td><button id='9' class="button" onclick="createExp(id)">9</button></td>
+          <td><button id='*' class="button" onclick="createExp(id)">*</button></td>
+      </tr>
+      <tr>
+        <td><button id='c' class="button" onclick="clearExp()">c</button></td>
+        <td><button id='0' class="button" onclick="createExp(id)">0</button></td>
+        <td><button id='=' class="button" onclick="evaluateExp(id)">=</button></td>
+        <td><button id='/' class="button" onclick="createExp(id)">/</button></td>
+    </tr>
+        </table>
+</div>
+
+<div class="display" id='disp'></div>
+</body>
+</html>
+
